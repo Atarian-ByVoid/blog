@@ -1,14 +1,15 @@
 /* FOOTER 
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+p{
+  color: aliceblue;
+}
 footer {
     background-color: #000000;
     padding: 20px 0;
     border-radius: 10px;
   
   }
-  footer p{
-    color: aliceblue;
-  }
+
   .container {
     max-width: 1200px;
     margin: 0 auto;

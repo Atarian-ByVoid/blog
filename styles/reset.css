@@ -1,0 +1,6 @@
+/* Resetando as configurações padrão de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

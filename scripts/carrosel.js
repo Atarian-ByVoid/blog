@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function updateCarousel() {
-        const offset = -currentIndex * 100; // Ajusta o deslocamento
+        const offset = -currentIndex * 100;
         carousel.style.transform = `translateX(${offset}%)`;
 
         items.forEach((item, index) => {
@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     });
 
-    updateCarousel(); // Configura o estado inicial
+    updateCarousel(); 
 });

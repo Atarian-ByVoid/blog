@@ -120,3 +120,99 @@ main aside .instagram {
         max-width: 100px;
     }
 }
+
+
+
+/*NEW DESIGN
+
+Photo by Frans van Heerden: https://www.pexels.com/photo/aurora-borealis-3025005/
+*/
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #f8f8f8;
+}
+
+
+.header-2 {
+    background-image: url('/images/pexels-frans-van-heerden-201846-3025005.jpg'); /* Imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Para ancorar o conteúdo interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Ajuste a altura conforme necessário */
+}
+
+.header-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Camada escura translúcida */
+    z-index: 1; /* Garantir que esteja abaixo do conteúdo */
+}
+
+.glass-effect {
+    position: relative;
+    z-index: 2; /* Acima do escurecimento */
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda levemente visível */
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    border-radius: 12px; /* Bordas arredondadas */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre imagem e texto */
+    color: #fff; /* Texto branco para contraste */
+}
+
+.header-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%; /* Imagem redonda */
+}
+
+.header-content h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header-content p {
+    margin: 0;
+    font-size: 1rem;
+}
